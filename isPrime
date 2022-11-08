@@ -1,0 +1,6 @@
+  def isPrime(n: Int): Boolean =
+    def rec(t: Int): Boolean =
+      if (t <= 1) true
+      else n % t != 0 && rec(t - 1)
+
+    rec(n / 2)
